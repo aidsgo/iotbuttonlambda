@@ -1,0 +1,22 @@
+{
+  "name": "aidsgolamdba",
+  "version": "1.0.0",
+  "description": "this is the lambda for aidsgo button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aaronisme/aidsgobutton.git"
+  },
+  "author": "Aaron Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronisme/aidsgobutton/issues"
+  },
+  "homepage": "https://github.com/aaronisme/aidsgobutton#readme",
+  "dependencies": {
+    "requestretry": "^1.12.0"
+  }
+}
