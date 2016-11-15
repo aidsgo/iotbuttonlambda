@@ -5,7 +5,7 @@ exports.handler = (event, context) => {
     console.log('Received event:', event.clickType);
 
     const options = {
-        url: 'https://tranquil-peak-57296.herokuapp.com/emergency',
+        url: 'https://aids-go-api.herokuapp.com/emergency',
         json: true,
         method:'POST',
         maxAttempts: 3,
@@ -19,7 +19,6 @@ exports.handler = (event, context) => {
     request(options)
         .then(response => {
             if (response.statusCode === 200) {
-                console.log(response.body);
                 console.log("sent the request. Id is:",event.serialNumber);
             } else {
                 throw response.statusCode;
